@@ -1,5 +1,5 @@
 # 🛡️ FinSentinel AI
-
+https://finsentinelai.netlify.app/overview
 **Full-Stack Financial Risk Intelligence & Fraud Analytics Platform**
 
 > Enterprise-grade fintech intelligence platform combining fraud detection, transaction anomaly analytics, customer risk scoring, behavioral financial intelligence, and explainable AI.
