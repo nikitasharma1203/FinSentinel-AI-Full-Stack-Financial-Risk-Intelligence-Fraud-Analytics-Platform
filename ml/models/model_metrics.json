@@ -1,0 +1,46 @@
+{
+  "trained_at": "2026-05-27T08:53:11.681276",
+  "model": "XGBoost + IsolationForest",
+  "version": "1.0.0",
+  "dataset_size": 200000,
+  "fraud_rate": 0.025,
+  "features": [
+    "log_amount",
+    "amount_deviation",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_night",
+    "month",
+    "txn_count_1h",
+    "time_since_last_txn_min",
+    "is_international",
+    "is_high_risk_category",
+    "merchant_category_enc",
+    "is_high_risk_payment",
+    "payment_method_enc"
+  ],
+  "metrics": {
+    "auc_roc": 0.9972,
+    "auc_pr": 0.9851,
+    "f1": 0.9652,
+    "precision": 0.9586,
+    "recall": 0.972
+  },
+  "feature_importance": {
+    "amount_deviation": 3.5418622493743896,
+    "log_amount": 1.8095065355300903,
+    "hour": 1.1345868110656738,
+    "is_high_risk_category": 0.511618435382843,
+    "is_international": 0.3948463797569275,
+    "txn_count_1h": 0.3142700493335724,
+    "merchant_category_enc": 0.2668110132217407,
+    "is_night": 0.24662786722183228,
+    "month": 0.21204806864261627,
+    "time_since_last_txn_min": 0.16691432893276215,
+    "day_of_week": 0.1620512157678604,
+    "payment_method_enc": 0.15418562293052673,
+    "is_weekend": 0.006339424755424261,
+    "is_high_risk_payment": 0.0
+  }
+}

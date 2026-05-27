@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+*.pkl
+*.joblib
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Data (large files)
+data/raw/*.csv
+data/processed/*.csv
+ml/models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
+
+# Reports
+reports/*.pdf

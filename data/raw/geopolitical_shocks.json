@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2022-02-24",
+    "event": "Russia-Ukraine War Outbreak",
+    "severity": 0.95
+  },
+  {
+    "date": "2022-05-04",
+    "event": "US Fed 50bps Rate Hike",
+    "severity": 0.72
+  },
+  {
+    "date": "2022-10-19",
+    "event": "UK Mini-Budget Crisis",
+    "severity": 0.68
+  },
+  {
+    "date": "2023-03-10",
+    "event": "Silicon Valley Bank Collapse",
+    "severity": 0.81
+  },
+  {
+    "date": "2023-07-26",
+    "event": "US Fed Raises to 5.25-5.50%",
+    "severity": 0.7
+  },
+  {
+    "date": "2023-10-07",
+    "event": "Israel-Gaza War Outbreak",
+    "severity": 0.91
+  },
+  {
+    "date": "2024-01-15",
+    "event": "Red Sea Shipping Disruption",
+    "severity": 0.74
+  },
+  {
+    "date": "2024-04-01",
+    "event": "Iran Strikes Israel (Direct)",
+    "severity": 0.88
+  },
+  {
+    "date": "2024-07-31",
+    "event": "Japan Rate Hike Triggers Selloff",
+    "severity": 0.77
+  },
+  {
+    "date": "2020-03-23",
+    "event": "COVID-19 Global Market Crash",
+    "severity": 0.99
+  },
+  {
+    "date": "2020-04-20",
+    "event": "Oil Prices Go Negative (WTI)",
+    "severity": 0.93
+  },
+  {
+    "date": "2021-11-25",
+    "event": "Omicron Variant Discovered",
+    "severity": 0.76
+  }
+]
