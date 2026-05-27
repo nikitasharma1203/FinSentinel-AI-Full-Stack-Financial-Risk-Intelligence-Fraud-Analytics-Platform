@@ -1,20 +1,8 @@
 # 🛡️ FinSentinel AI
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React%2018-61DAFB?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi" />
-  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql" />
-  <img src="https://img.shields.io/badge/ML-XGBoost%20%7C%20SHAP-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Deployment-Netlify%20%7C%20Render-black?style=for-the-badge" />
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/license/yourname/finsentinel-ai?style=flat-square" />
-  <img src="https://img.shields.io/github/stars/yourname/finsentinel-ai?style=flat-square" />
-  <img src="https://img.shields.io/github/forks/yourname/finsentinel-ai?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/yourname/finsentinel-ai?style=flat-square" />
-</p>
-
 ---
 
 # 🧠 FinSentinel AI  
