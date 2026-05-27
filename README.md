@@ -1,11 +1,7 @@
 # 🛡️ FinSentinel AI
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Deployment-Netlify%20%7C%20Render-black?style=for-the-badge" />
-</p>
----
+<img src="https://img.shields.io/badge/Deployment-Netlify%20%7C%20Render-black?style=for-the-badge" />
 
-# 🧠 FinSentinel AI  
 ### Full-Stack Financial Risk Intelligence & Fraud Analytics Platform
 
 > Enterprise-grade fintech intelligence platform combining fraud detection, anomaly analytics, behavioral risk intelligence, explainable AI, forecasting, and financial network analysis.
