@@ -1,144 +1,291 @@
 # 🛡️ FinSentinel AI
-https://finsentinelai.netlify.app/overview
-**Full-Stack Financial Risk Intelligence & Fraud Analytics Platform**
 
-> Enterprise-grade fintech intelligence platform combining fraud detection, transaction anomaly analytics, customer risk scoring, behavioral financial intelligence, and explainable AI.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React%2018-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/ML-XGBoost%20%7C%20SHAP-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deployment-Netlify%20%7C%20Render-black?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/yourname/finsentinel-ai?style=flat-square" />
+  <img src="https://img.shields.io/github/stars/yourname/finsentinel-ai?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/yourname/finsentinel-ai?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/yourname/finsentinel-ai?style=flat-square" />
+</p>
 
 ---
 
-## 🚀 Tech Stack
+# 🧠 FinSentinel AI  
+### Full-Stack Financial Risk Intelligence & Fraud Analytics Platform
 
-| Layer | Technology |
-|-------|-----------|
+> Enterprise-grade fintech intelligence platform combining fraud detection, anomaly analytics, behavioral risk intelligence, explainable AI, forecasting, and financial network analysis.
+
+---
+
+# 🔗 Live Demo
+
+### 🌐 Frontend  
+https://finsentinelai.netlify.app/overview
+
+---
+
+# ✨ Features
+
+## 🔍 Real-Time Fraud Intelligence
+- Fraud probability scoring using XGBoost
+- Velocity anomaly detection
+- Merchant & geo-risk monitoring
+- Isolation Forest anomaly detection
+
+---
+
+## 👤 Behavioral Financial Intelligence
+- Customer segmentation using clustering
+- Spending pattern analysis
+- Churn-risk prediction
+- Risk migration tracking
+
+---
+
+## 🧠 Explainable AI Engine
+- SHAP-based feature contribution analysis
+- Prediction confidence scoring
+- “Why was this transaction flagged?” insights
+- Transparent model interpretation
+
+---
+
+## 🌐 Financial Network Intelligence
+- Fraud ring detection
+- Transaction relationship mapping
+- Centrality-based suspicious entity detection
+- Interactive graph visualizations using PyVis + NetworkX
+
+---
+
+## 📈 Forecasting & Scenario Simulation
+- Inflation and liquidity stress simulations
+- Fraud surge modeling
+- Prophet & SARIMA forecasting
+- Dynamic portfolio risk recomputation
+
+---
+
+## 🤖 Analyst Copilot
+- AI-generated insight summaries
+- Automated trend detection
+- Risk alert generation
+- Executive-level reporting assistance
+
+---
+
+# 🏗️ Tech Stack
+
+| Layer | Technologies |
+|---|---|
 | Frontend | React 18, Tailwind CSS, Recharts, Framer Motion |
 | Backend | FastAPI, SQLAlchemy, PostgreSQL |
-| ML | XGBoost, Scikit-Learn, SHAP, Isolation Forest |
-| Graphs | NetworkX, PyVis |
+| Machine Learning | XGBoost, Scikit-Learn, SHAP, Isolation Forest |
 | Forecasting | Prophet, SARIMA |
-| Auth | Firebase Auth |
-| Deployment | Vercel (FE), Render (BE) |
+| Graph Analytics | NetworkX, PyVis |
+| Authentication | Firebase Auth |
+| Deployment | Netlify, Render |
+| Data Processing | Pandas, NumPy |
 
 ---
 
-## 📦 Project Structure
-
-```
-finsentinel-ai/
-├── frontend/          # React dashboard
-├── backend/           # FastAPI server
-├── ml/                # ML pipelines & notebooks
-├── data/              # Datasets (raw/processed/synthetic)
-├── scripts/           # Data collection & ETL scripts
-└── reports/           # Generated PDF reports
-```
-
----
-
-## ⚡ Quick Start
-
-### 1. Clone & Install
+# 📂 Project Structure
 
 ```bash
-git clone https://github.com/yourname/finsentinel-ai
+finsentinel-ai/
+│
+├── frontend/                  # React dashboard
+├── backend/                   # FastAPI backend
+├── ml/                        # ML pipelines & notebooks
+├── data/                      # Raw & processed datasets
+├── scripts/                   # ETL and data collection scripts
+├── reports/                   # Generated reports
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# ⚙️ System Architecture
+
+```text
+User Dashboard (React)
+        │
+        ▼
+ FastAPI Backend APIs
+        │
+ ┌───────────────┬────────────────┬────────────────┐
+ ▼               ▼                ▼
+Fraud ML     Risk Engine     Forecast Engine
+(XGBoost)    (Clustering)    (Prophet/SARIMA)
+        │
+        ▼
+ PostgreSQL + Analytics Layer
+        │
+        ▼
+ Interactive Insights & Reports
+```
+
+---
+
+# 🚀 Quick Start
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourname/finsentinel-ai.git
 cd finsentinel-ai
 ```
 
-### 2. Backend Setup
+---
+
+## 2️⃣ Backend Setup
 
 ```bash
 cd backend
+
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Linux / Mac
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
-cp .env.example .env      # Fill in your DB credentials
+
+cp .env.example .env
+
 uvicorn main:app --reload
 ```
 
-### 3. Frontend Setup
+---
+
+## 3️⃣ Frontend Setup
 
 ```bash
 cd frontend
+
 npm install
-cp .env.example .env.local  # Fill in API URL
+
+cp .env.example .env.local
+
 npm run dev
 ```
 
-### 4. ML Pipeline
+---
+
+## 4️⃣ ML Pipeline
 
 ```bash
 cd ml
+
 python pipelines/train_fraud_model.py
 python pipelines/train_anomaly_model.py
 python pipelines/generate_risk_scores.py
 ```
 
-### 5. Data Collection
+---
+
+## 5️⃣ Data Collection Scripts
 
 ```bash
 cd scripts
-python fetch_usd_inr.py          # USD/INR historical data
-python fetch_rbi_indicators.py   # RBI macro indicators
-python fetch_global_macro.py     # Oil, DXY, Gold, etc.
-python fetch_market_data.py      # NIFTY, VIX, S&P500
-python fetch_news_sentiment.py   # Geopolitical NLP scoring
-python generate_synthetic_txns.py # Synthetic transaction data
+
+python fetch_usd_inr.py
+python fetch_rbi_indicators.py
+python fetch_global_macro.py
+python fetch_market_data.py
+python fetch_news_sentiment.py
+python generate_synthetic_txns.py
 ```
 
 ---
 
-## 🧠 Core Modules
+# 📊 Core Dashboard Modules
 
-### Module 1 — Transaction Intelligence Engine
-- Real-time fraud probability scoring
-- Velocity anomaly detection
-- Merchant & geo risk analysis
-
-### Module 2 — Behavioral Risk Analytics
-- Customer spending pattern clustering
-- Risk migration & churn-risk scoring
-- K-Means, DBSCAN, Isolation Forest
-
-### Module 3 — Explainable AI Engine
-- SHAP feature contribution visualizations
-- "Why was this flagged?" reasoning panel
-- Confidence scoring per prediction
-
-### Module 4 — Financial Network Intelligence
-- Transaction relationship graphs
-- Fraud ring detection with centrality analysis
-- NetworkX + PyVis interactive visualization
-
-### Module 5 — Scenario Simulation Engine
-- Simulate: inflation spikes, fraud surges, liquidity stress
-- Dynamic risk recomputation
-
-### Module 6 — Analyst Copilot
-- AI-generated insight summaries
-- Trend detection & alert generation
+| Module | Description |
+|---|---|
+| Executive Overview | Portfolio-wide financial intelligence |
+| Transaction Monitoring | Live fraud & anomaly tracking |
+| Fraud Analytics | Fraud scoring and detection insights |
+| Customer Risk Intelligence | Behavioral risk segmentation |
+| Network Intelligence | Fraud ring & transaction graph analysis |
+| AI Explainability | SHAP explainability dashboards |
+| Scenario Simulator | Stress-testing & forecasting |
+| Reports Center | Downloadable AI-generated reports |
 
 ---
 
-## 📊 Dashboard Pages
+# 🗄️ Database Design
 
-1. Executive Overview
-2. Transaction Monitoring
-3. Fraud Analytics
-4. Customer Risk Intelligence
-5. Network Intelligence
-6. AI Explainability
-7. Scenario Simulator
-8. My Reports
+Core tables:
+
+```text
+transactions
+customers
+fraud_predictions
+merchant_risk
+network_edges
+reports
+risk_scores
+```
+
+See:
+
+```bash
+backend/database/schema.sql
+```
 
 ---
 
-## 🗄️ Database Schema
+# 📈 ML Models Used
 
-See `backend/database/schema.sql` for full schema.
-
-Core tables: `transactions`, `customers`, `fraud_predictions`, `reports`, `merchant_risk`, `network_edges`
+| Model | Purpose |
+|---|---|
+| XGBoost | Fraud prediction |
+| Isolation Forest | Anomaly detection |
+| K-Means | Customer segmentation |
+| DBSCAN | Behavioral clustering |
+| Prophet | Time-series forecasting |
+| SARIMA | Financial trend modeling |
 
 ---
 
-## 📄 License
+# 🔐 Authentication
 
-MIT License — For educational/portfolio use.
+- Firebase Authentication
+- Protected dashboard routes
+- Session-based access management
+
+---
+
+# 📦 Deployment
+
+| Service | Platform |
+|---|---|
+| Frontend | Netlify |
+| Backend APIs | Render |
+| Database | PostgreSQL |
+| Authentication | Firebase |
+
+---
+
+# 🧪 Future Enhancements
+
+- Kafka real-time streaming
+- LLM-powered fraud investigation assistant
+- Graph Neural Networks (GNNs)
+- Real-time transaction ingestion
+- Multi-tenant enterprise support
+- PDF intelligence reporting
+
+---
